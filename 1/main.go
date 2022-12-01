@@ -36,17 +36,9 @@ func main() {
 
 	}
 
-	mostCalories := 0
-
-	for i := 0; i < len(dwarfSum)-1; i++ {
-		if dwarfSum[i] > mostCalories {
-			mostCalories = dwarfSum[i]
-		}
-	}
-
-	fmt.Println("Part1: ", mostCalories)
-
 	sort.Ints(dwarfSum)
+
+	fmt.Println("Part1: ", dwarfSum[len(dwarfSum)-1])
 
 	top3 := 0
 
